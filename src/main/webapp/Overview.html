@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="OverviewStyle.css"/>
+    <link rel="stylesheet" href="Toast.css"/>
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Please fix this</title>
+</head>
+<body>
+
+<ul>
+    <li id="onlybugs"><a href="#bugreports">Bug Reports</a></li>
+    <li id="onlyfeedback"><a href="#feedback">Feedback</a></li>
+
+    <li style="float: right"><a href="#Logout">Logout</a></li>
+    <li style="float: right" class="dropdown"><a class="dropbtn">New</a>
+        <div class="dropdown-content">
+            <a href="#" id="newbug"> Bugreport</a>
+            <a href="#" id="newfeedback">Feedback</a>
+        </div>
+    </li>
+
+    <li style="float: right"><input type="text" name="search"
+                                    placeholder="search" class="search"/></li>
+</ul>
+
+<div class="reportlist">
+</div>
+<div class="reactielist">
+</div>
+<div class="newStuff"></div>
+<div id="snackbar"></div>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="bugreports.js"></script>
+<script src="feedback.js"></script>
+<script src="navbar.js"></script>
+<script src="NewBugReport.js"></script>
+</body>

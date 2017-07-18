@@ -1,0 +1,193 @@
+a {
+    font-family: "Roboto", sans-serif;
+    float: left;
+    clear: left;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: #7FE66F;
+    margin: 0;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.bugreport {
+    width: 95%;
+    padding: 8px;
+    height: 400px;
+    position: initial;
+    z-index: 1;
+    margin-left: 2px;
+    margin-right: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #cccccc;
+    display: block;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+.feedback {
+    width: 95%;
+    padding: 8px;
+    height: 400px;
+    position: initial;
+    z-index: 2;
+    margin-left: 2px;
+    margin-right: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #cccccc;
+    display: block;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+.reactie {
+    width: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 50px;
+    position: initial;
+    z-index: 1;
+    margin-left: 2px;
+    margin-right: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #cccccc;
+    display: block;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+.bugreport h1 {
+    font-size: 13px;
+}
+
+.feedback h1 {
+    font-size: 13px;
+}
+
+.reactform {
+    width: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 50px;
+    position: initial;
+    z-index: 2;
+    margin-left: 2px;
+    margin-right: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #cccccc;
+    display: block;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+
+#newreaction {
+    color: black;
+    width: 99%;
+    height: 95%;
+    word-wrap: break-word;
+    background-color: transparent;
+    opacity: 5;
+    border: hidden;
+}
+
+.reportlist {
+    width: 35%;
+    margin-top: 47px;
+    border-right-width: thin;
+    padding-top: 5px;
+    margin-right: 0;
+    margin-left: 4%;
+    float: left;
+    display: inline-block;
+
+}
+
+.reactielist {
+    margin-top: 47px;
+    position: fixed;
+    height: 95%;
+    width: 50%;
+    padding-top: 5px;
+    margin-right: 5%;
+    margin-left: 4%;
+    float: right;
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.newStuff {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.bugform {
+    margin: 0 auto;
+    background-color: #cccccc;
+    display: block;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+
+}
+
+#title {
+    font-family: "Roboto", sans-serif;
+}
+
+#body {
+    font-family: "Roboto", sans-serif;
+    height: 239px;
+    display: inherit;
+    word-wrap: break-word;
+}
+
+#status {
+    font-family: "Roboto", sans-serif;
+    display: block;
+}
+
+#date {
+    font-family: "Roboto", sans-serif;
+    display: block;
+}
+
+#username {
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+#priority {
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
