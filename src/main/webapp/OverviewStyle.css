@@ -22,29 +22,12 @@ body {
     background-color: #4CAF50;
 }
 
-.bugreport {
+.report {
     width: 95%;
     padding: 8px;
     height: 400px;
     position: initial;
     z-index: 1;
-    margin-left: 2px;
-    margin-right: 100%;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: #cccccc;
-    display: block;
-    align-content: initial;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border-radius: 15px;
-}
-
-.feedback {
-    width: 95%;
-    padding: 8px;
-    height: 400px;
-    position: initial;
-    z-index: 2;
     margin-left: 2px;
     margin-right: 100%;
     margin-bottom: 5px;
@@ -74,11 +57,7 @@ body {
     border-radius: 15px;
 }
 
-.bugreport h1 {
-    font-size: 13px;
-}
-
-.feedback h1 {
+.report h1 {
     font-size: 13px;
 }
 
@@ -135,6 +114,27 @@ body {
     overflow-y: scroll;
 }
 
+#YesDelRe{
+    background-color: rgba(175, 0, 1, 0.61); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#NoDelRe{
+    background-color: rgba(38, 34, 219, 0.65); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -145,19 +145,51 @@ body {
     left: 50%;
     width: 30em;
     height: 18em;
-    margin-top: -9em; /*set to a negative number 1/2 of your height*/
-    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    margin-top: -9em;
+    margin-left: -15em;
     border: 1px solid transparent;
     background-color: transparent;
 }
 
 .bugform {
     margin: 0 auto;
-    background-color: #cccccc;
+    background-color: #ffffff;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: -9em;
+    margin-left: -15em;
+    align-content: initial;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 15px;
+}
+.feedbackform{
+    margin: 0 auto;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height: 18em;
+    margin-top: -9em;
+    margin-left: -15em;
     display: block;
     align-content: initial;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 15px;
+}
+.newStufform{
+    right: 50%;
+    outline: none;
+    padding: 5px;
+    border-radius:10px;
+    display:block;
+    width: 280px;
+    position: relative;
+    margin:10px 0;
+    border: 1px solid #E2E2E2;
+    outline: medium none;
 
 }
 

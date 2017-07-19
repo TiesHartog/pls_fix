@@ -1,7 +1,5 @@
 package ties.hartog.pls_fix.WebServices;
 
-
-
 import java.util.List;
 
 import javax.annotation.security.RolesAllowed;
@@ -15,12 +13,11 @@ import ties.hartog.pls_fix.domain.Report;
 import ties.hartog.pls_fix.domain.UserService;
 import ties.hartog.pls_fix.domain.ReportService;
 
-
-@Path("/overview")
+@Path("/reports")
 public class ReportResource {
 	ReportService reportService = ServiceProvider.getReportService();
 	UserService userService = ServiceProvider.getUserService();
-	
+
 	@GET
 	@Path("/bugreports")
 	@RolesAllowed({ "user", "admin" })
@@ -67,18 +64,24 @@ public class ReportResource {
 		JsonArray array = jab.build();
 		return array.toString();
 	}
+
 	@POST
-	@Path("{ID}")
+	@Path("/newbug{ID}")
 	@RolesAllowed({ "user", "admin" })
-	public String createBugReport(@PathParam("ID") int uID, @FormParam("title") String titel, @FormParam("priority") int prioriteit, @FormParam("body") String tekst ){
+	public void createBugReport(@PathParam("ID") int uID, @FormParam("title") String titel,
+			@FormParam("priority") int prioriteit, @FormParam("body") String tekst) {
 		System.out.println("doe iets please");
 		reportService.saveBugReport(titel, prioriteit, tekst, uID);
-		JsonArrayBuilder jab = Json.createArrayBuilder();
-		JsonObjectBuilder job = Json.createObjectBuilder();
-		job.add("result", "succesfull");
-		jab.add(job);
-		JsonArray array = jab.build();
-		return array.toString();
+
+	}
+
+	@POST
+	@Path("/newfeedback{ID}")
+	@RolesAllowed({ "user", "admin" })
+	public void createFeedback(@PathParam("ID") int uID, @FormParam("title") String titel,
+			@FormParam("body") String tekst) {
+		System.out.println("doe iets please");
+		reportService.saveFeedback(titel, tekst, uID);
 	}
 
 }

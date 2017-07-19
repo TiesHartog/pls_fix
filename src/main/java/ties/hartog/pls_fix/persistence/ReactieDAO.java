@@ -38,10 +38,18 @@ public class ReactieDAO extends BaseDAO {
 		return results;
 	}
 	public Reactie findById(int reactieID) {
-		return selectReacties("SELECT * FROM reactie WHERE reactieID = " +reactieID).get(0);
+		try{
+			 Reactie x = selectReacties("SELECT * FROM reactie WHERE reactieID = " +reactieID).get(0);
+			 return x;
+			
+		}
+		catch(IndexOutOfBoundsException e){
+			return null;
+			
+		}
 	}
-	
 	public boolean create(Reactie reactie){
+		
 		String query = "INSERT INTO reactie(reportID, body, userID) VALUES( ?, ?, ?)" ;		
 		boolean succes = true;
 		try (Connection con = getConnection();
@@ -55,7 +63,7 @@ public class ReactieDAO extends BaseDAO {
 	            System.out.println("reacDAO" + e.getMessage());
 	            succes = false;
 	        }
-
+		System.out.println("reaction saved");
 		return succes;
 	}
 	public List<Reactie> getReactiesByReport(int ReportID){
@@ -65,22 +73,25 @@ public class ReactieDAO extends BaseDAO {
 	
 	
 	public boolean delete(int reactieID) {
-		boolean result = false;
+		boolean succes = false;
 		boolean reactieExists = findById(reactieID) != null;
+		System.out.println(reactieID);
 		
 		if (reactieExists) {
 			String stmnt = "DELETE FROM reactie WHERE reactieID = " +reactieID; 
-					
+			System.out.println("ff" +reactieID);
 			try (Connection con = getConnection();
 				PreparedStatement pstmt = con.prepareStatement(stmnt)){
 	            pstmt.executeUpdate();
 	            pstmt.close();
+	            succes = true;
 				}
 				catch (SQLException sqle) {
-				sqle.printStackTrace();
+					System.out.println("ff2" +reactieID);
+					sqle.printStackTrace();
+		            succes = false;
 			}
 		}
-		
-		return result;
+		return succes;
 	}
 }

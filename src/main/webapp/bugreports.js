@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#snackbar").hide();
     $("#onlybugs").click(function () {
         var request = $.get({
-            url: "/pls_fix/restservices/overview/bugreports",
+            url: "restservices/reports/bugreports",
             beforeSend: function (xhr) {
                 var token = window.sessionStorage.getItem("sessionToken");
                 xhr.setRequestHeader('Authorization', 'Bearer ' + token);
@@ -18,7 +18,6 @@ $(document).ready(function () {
         request.done(function (data) {
             $(".reactielist").empty();
             $(".reportlist").empty();
-            console.log(data);
             data.forEach(function (obj) {
                 // Create elements
                 var div = document.createElement('div');

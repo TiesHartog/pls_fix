@@ -7,8 +7,7 @@ $("#login").click(function (event) {
     $.post("restservices/authentication", data, function (response) {
 
         window.sessionStorage.setItem("sessionToken", response);
-        window.location.href = "Overview.html";
-
+        window.location.replace("Overview.html")
         }).fail(function (jqXHR, textStatus, errorThrown) {
             $(".form").effect("shake", {times: 4}, 1000);
             $(".form, .textinput").css("background-color", "#FF4040");
@@ -21,7 +20,6 @@ $("#login").click(function (event) {
     $.post("restservices/UserResource", data, function (stuff) {
         stuff.forEach(function (obj) {
             window.sessionStorage.setItem("ID", obj.id);
-            console.log(obj.id);
         })
     });
 });

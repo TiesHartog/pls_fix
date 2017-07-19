@@ -31,7 +31,7 @@ public class ReportService {
 		return matches;
 	}
 
-	public boolean saveFeedback(String titel, int prioriteit, String tekst, int type, int status, int uID) {
+	public boolean saveFeedback(String titel, String tekst, int uID) {
 		Report report = new Report(titel, 0, tekst, 2, 0, uID);
 		return repDAO.create(report);
 	}

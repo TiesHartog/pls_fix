@@ -10,6 +10,7 @@ import javax.json.JsonObjectBuilder;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -21,7 +22,7 @@ import ties.hartog.pls_fix.domain.ReactieService;
 import ties.hartog.pls_fix.domain.ReportService;
 import ties.hartog.pls_fix.domain.UserService;
 
-@Path("/report")
+@Path("/reactions")
 public class ReactieResource {
 	ReportService reportService = ServiceProvider.getReportService();
 	UserService userService = ServiceProvider.getUserService();
@@ -29,7 +30,7 @@ public class ReactieResource {
 
 	
 	@GET	
-	@Path("/reactions")
+	@Path("/get")
 	@Produces("application/json")
 	@RolesAllowed({ "user", "admin" })
 	public String getReactions(@QueryParam("id") int id)
@@ -53,19 +54,24 @@ public class ReactieResource {
 	
 	
 	@PUT
-	@Path("{ID}")
+	@Path("/create{ID}")
 	@RolesAllowed({ "user", "admin" })
-	public String createReaction(@PathParam("ID") int ID, @FormParam("react") String body, @FormParam("reportid") int reportID){
+	public void createReaction(@PathParam("ID") int ID, @FormParam("react") String body, @FormParam("reportid") int reportID){
 		reactieService.save(body, ID, reportID);
-		JsonArrayBuilder jab = Json.createArrayBuilder();
-		JsonObjectBuilder job = Json.createObjectBuilder();
-		job.add("result", "succesfull");
-		jab.add(job);
-		JsonArray array = jab.build();
-		return array.toString();
 	}
 	
-	
-	
+	@DELETE
+	@Path("/delete{reID}")
+	@RolesAllowed({ "user", "admin" })
+	public Response deleteReaction(@PathParam("reID") int reID){
+		if(reactieService.reactieExists(reID)){
+			reactieService.delete(reID);
+			return Response.ok().build();
+		}
+		else{
+			return Response.status(Response.Status.NOT_FOUND).build();
+		}
 
+
+	}
 }
