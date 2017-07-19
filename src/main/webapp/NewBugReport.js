@@ -15,23 +15,23 @@ $(document).ready(function () {
         title.setAttribute("maxlength", "30");
         title.setAttribute("placeholder", "title, description in a few words...");
         title.setAttribute("type", "text");
-        title.setAttribute("class", "newstufform");
+        // title.setAttribute("class", "newstufform");
 
         body.setAttribute("id", "newbody");
         body.setAttribute("name", "body");
         body.setAttribute("maxlength", "500");
-        body.setAttribute("class", "newstufform");
+        // body.setAttribute("class", "newstufform");
         body.setAttribute("placeholder", "Full description of the bug...max 500 chars");
 
         priority.setAttribute("id", "newpriority");
         priority.setAttribute("type", "number");
         priority.setAttribute("name", "newPriority");
-        priority.setAttribute("class", "newstufform");
+        // priority.setAttribute("class", "newstufform");
 
         submitbtn.setAttribute("id", "submitbtn");
         submitbtn.setAttribute("type", "button");
         submitbtn.setAttribute("class", "submitbug");
-        submitbtn.setAttribute("class", "newstufform");
+        // submitbtn.setAttribute("class", "newstufform");
         submitbtn.innerHTML = "Submit";
 
         $(".newStuff").append(form);
@@ -53,7 +53,7 @@ $(document).ready(function () {
                 },
                 data: $(".bugform").serialize(),
                 success: function (response) {
-                    $("#snackbar").empty().append("Comment saved");
+                    $("#snackbar").empty().append("Report saved");
                     $("#snackbar").fadeIn(400).delay(1500).fadeOut(500);
                 },
                 error: function (response) {
@@ -64,6 +64,8 @@ $(document).ready(function () {
             request.done(function () {
                 $(".newStuff").fadeOut(250);
                 $(".newStuff").delay(249).empty();
+                $(".bugform").fadeOut(250);
+                $(".bugform").delay(249).empty();
             });
 
         });

@@ -38,22 +38,29 @@ $(document).ready(function () {
                     var token = window.sessionStorage.getItem("sessionToken");
                     xhr.setRequestHeader('Authorization', 'Bearer ' + token);
                 },
-                data: $(".bugform").serialize(),
+                data: $(".feedbackform").serialize(),
                 success: function (response) {
-                    $("#snackbar").empty().append("Comment saved");
+                    $("#snackbar").empty().append("Report saved");
                     $("#snackbar").fadeIn(400).delay(1500).fadeOut(500);
                 },
                 error: function (response) {
                     $("#snackbar").empty().append("Something went wrong");
                     $("#snackbar").fadeIn(400).delay(1500).fadeOut(500);
+                    $(".newStuff").empty();
+                    $(".newStuff").fadeOut(250);
+                    $(".newStuff").delay(249).empty();
+                    $(".feedbackform").fadeOut(250);
+                    $(".feedbackform").delay(249).empty();
                 }
             });
             request.done(function () {
                 $(".newStuff").empty();
+                $(".newStuff").fadeOut(250);
+                $(".newStuff").delay(249).empty();
+                $(".feedbackform").fadeOut(250);
+                $(".feedbackform").delay(249).empty();
             });
 
         });
     });
-
-
 });

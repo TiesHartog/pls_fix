@@ -80,7 +80,6 @@ public class ReportResource {
 	@RolesAllowed({ "user", "admin" })
 	public void createFeedback(@PathParam("ID") int uID, @FormParam("title") String titel,
 			@FormParam("body") String tekst) {
-		System.out.println("doe iets please");
 		reportService.saveFeedback(titel, tekst, uID);
 	}
 

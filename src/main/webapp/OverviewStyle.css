@@ -179,19 +179,18 @@ body {
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     border-radius: 15px;
 }
-.newStufform{
-    right: 50%;
-    outline: none;
-    padding: 5px;
-    border-radius:10px;
-    display:block;
-    width: 280px;
-    position: relative;
-    margin:10px 0;
-    border: 1px solid #E2E2E2;
-    outline: medium none;
-
-}
+/*.newStufform{*/
+    /*right: 50%;*/
+    /*outline: none;*/
+    /*padding: 5px;*/
+    /*border-radius:10px;*/
+    /*display:block;*/
+    /*width: 280px;*/
+    /*position: relative;*/
+    /*margin:10px 0;*/
+    /*border: 1px solid #E2E2E2;*/
+    /*outline: medium none;*/
+/*}*/
 
 #title {
     font-family: "Roboto", sans-serif;

@@ -62,7 +62,7 @@ public class ReactieResource {
 	
 	@DELETE
 	@Path("/delete{reID}")
-	@RolesAllowed({ "user", "admin" })
+	@RolesAllowed("admin" )
 	public Response deleteReaction(@PathParam("reID") int reID){
 		if(reactieService.reactieExists(reID)){
 			reactieService.delete(reID);
