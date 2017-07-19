@@ -128,7 +128,7 @@ $(".reactielist").ready(function () {
 
 
 $(".reactielist").ready(function () {
-    $(".reactielis t").on("keyup", "#newreaction", function (e) {
+    $(".reactielist").on("keyup", "#newreaction", function (e) {
         if (e.which === 13) {
             e.preventDefault();
             var request = $.ajax({

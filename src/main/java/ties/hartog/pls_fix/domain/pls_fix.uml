@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_ZMWOgGxYEeewVL2cVuxgwA" name="pls_fix">
+    <eAnnotations xmi:id="_ZcfjUGxYEeewVL2cVuxgwA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_ZcfjUWxYEeewVL2cVuxgwA" source="codegen">
+        <details xmi:id="_ZcgKYGxYEeewVL2cVuxgwA" key="codegenDirectory" value="/pls_fix/src/main/java"/>
+        <details xmi:id="_aKjjMGxYEeewVL2cVuxgwA" key="AssociatedSourceCode" value="/pls_fix/src/main/java/ties/hartog/pls_fix/domain/Reactie.java;727890561/1;/pls_fix/src/main/java/ties/hartog/pls_fix/domain/ReactieService.java;2334508469/1;/pls_fix/src/main/java/ties/hartog/pls_fix/domain/Report.java;410047403/1;/pls_fix/src/main/java/ties/hartog/pls_fix/domain/ReportService.java;34570244/1;/pls_fix/src/main/java/ties/hartog/pls_fix/domain/User.java;4207341380/1;/pls_fix/src/main/java/ties/hartog/pls_fix/domain/UserService.java;283753025/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ZvYqIGxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvYqIWxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvYqImxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvYqI2xYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvYqJGxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvZRMGxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvZRMWxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvZRMmxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ZvZ4QGxYEeewVL2cVuxgwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZukKwGxYEeewVL2cVuxgwA" name="ties">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZukKwWxYEeewVL2cVuxgwA" name="hartog">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Zukx0GxYEeewVL2cVuxgwA" name="pls_fix">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZusGkGxYEeewVL2cVuxgwA" name="domain">
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZvUYsGxYEeewVL2cVuxgwA" name="Reactie">
+              <ownedAttribute xmi:id="_ZxzsAGxYEeewVL2cVuxgwA" name="reactieID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx0TEGxYEeewVL2cVuxgwA" name="tekst">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx0TEWxYEeewVL2cVuxgwA" name="userID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx06IGxYEeewVL2cVuxgwA" name="reportID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyBHYGxYEeewVL2cVuxgwA" name="Reactie" specification="_ZvbtcGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyBucGxYEeewVL2cVuxgwA" name="rID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyBucWxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyBucmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyBuc2xYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyBudGxYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>reactieID=rID;&#xD;
+		tekst=body;&#xD;
+		userID=uID;&#xD;
+		reportID=repID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyEKsGxYEeewVL2cVuxgwA" name="Reactie" specification="_ZveJsGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyEKsWxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyEKsmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyEKs2xYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyEKtGxYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>tekst=body;&#xD;
+		userID=uID;&#xD;
+		reportID=repID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_ZvbtcGxYEeewVL2cVuxgwA" name="Reactie" method="_ZyBHYGxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_Zvc7kGxYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_Zvc7kWxYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_ZvbtcWxYEeewVL2cVuxgwA" name="rID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvbtcmxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zvbtc2xYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvbtdGxYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zvc7kmxYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZveJsGxYEeewVL2cVuxgwA" name="Reactie" method="_ZyEKsGxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_ZveJtGxYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_ZveJtWxYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_ZveJsWxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZveJsmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZveJs2xYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvewwGxYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zvf-4GxYEeewVL2cVuxgwA" name="ReactieService">
+              <ownedAttribute xmi:id="_Zx1hMGxYEeewVL2cVuxgwA" name="reactieDAO" visibility="package" type="_Zxe74GxYEeewVL2cVuxgwA" association="_ZyNUoGxYEeewVL2cVuxgwA">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zx1hMWxYEeewVL2cVuxgwA" value="new ReactieDAO()"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyEKtWxYEeewVL2cVuxgwA" name="getReactiesByReport" specification="_ZvhNAGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyEKtmxYEeewVL2cVuxgwA" name="id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyEKt2xYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyEKuGxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return reactieDAO.getReactiesByReport(id);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyExwGxYEeewVL2cVuxgwA" name="delete" specification="_ZvjCMGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyExwWxYEeewVL2cVuxgwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyExwmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>System.out.println(&quot; Service&quot;+ID);&#xD;
+		return reactieDAO.delete(ID);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyExw2xYEeewVL2cVuxgwA" name="save" specification="_ZvjpQGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyExxGxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyExxWxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyExxmxYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyExx2xYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Reactie reactie = new Reactie(body, uID, repID);&#xD;
+		return reactieDAO.create(reactie);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyExyGxYEeewVL2cVuxgwA" name="reactieExists" specification="_Zvk3YGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyExyWxYEeewVL2cVuxgwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyExymxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Reactie reactie = reactieDAO.findById(ID);&#xD;
+		if(reactie == null){&#xD;
+			return false;&#xD;
+		}&#xD;
+		else{&#xD;
+			return true;&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_ZvhNAGxYEeewVL2cVuxgwA" name="getReactiesByReport" method="_ZyEKtWxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZvhNAWxYEeewVL2cVuxgwA" name="id">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvhNAmxYEeewVL2cVuxgwA" type="_ZvUYsGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zvh0EGxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZvjCMGxYEeewVL2cVuxgwA" name="delete" method="_ZyExwGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZvjCMWxYEeewVL2cVuxgwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvjCMmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZvjpQGxYEeewVL2cVuxgwA" name="save" method="_ZyExw2xYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZvjpQWxYEeewVL2cVuxgwA" name="body">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvjpQmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvkQUGxYEeewVL2cVuxgwA" name="repID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvkQUWxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zvk3YGxYEeewVL2cVuxgwA" name="reactieExists" method="_ZyExyGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zvk3YWxYEeewVL2cVuxgwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zvk3YmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZvmFgGxYEeewVL2cVuxgwA" name="Report">
+              <ownedAttribute xmi:id="_Zx2vUGxYEeewVL2cVuxgwA" name="reportID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx2vUWxYEeewVL2cVuxgwA" name="title">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx2vUmxYEeewVL2cVuxgwA" name="priority">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx3WYGxYEeewVL2cVuxgwA" name="body">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx3WYWxYEeewVL2cVuxgwA" name="type">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx39cGxYEeewVL2cVuxgwA" name="datum" type="_ZxhYIGxYEeewVL2cVuxgwA" association="_ZyKRUGxYEeewVL2cVuxgwA"/>
+              <ownedAttribute xmi:id="_Zx39cWxYEeewVL2cVuxgwA" name="status">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx39cmxYEeewVL2cVuxgwA" name="userID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyFY0GxYEeewVL2cVuxgwA" name="Report" specification="_ZvohwGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyFY0WxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY0mxYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY02xYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY1GxYEeewVL2cVuxgwA" name="type2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY1WxYEeewVL2cVuxgwA" name="status2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY1mxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY12xYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>title= titel;&#xD;
+		priority= prioriteit;&#xD;
+		body= tekst;&#xD;
+		type= type2;&#xD;
+		status= status2;&#xD;
+		userID= uID;	&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyFY2GxYEeewVL2cVuxgwA" name="Report" specification="_ZxuzgGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyFY2WxYEeewVL2cVuxgwA" name="rID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY2mxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY22xYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY3GxYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY3WxYEeewVL2cVuxgwA" name="type2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY3mxYEeewVL2cVuxgwA" name="datum2" type="_ZxhYIGxYEeewVL2cVuxgwA"/>
+                <ownedParameter xmi:id="_ZyFY32xYEeewVL2cVuxgwA" name="status2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY4GxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyFY4WxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>reportID = rID;&#xD;
+		title= titel;&#xD;
+		priority= prioriteit;&#xD;
+		body= tekst;&#xD;
+		type= type2;&#xD;
+		datum= datum2;&#xD;
+		status= status2;&#xD;
+		userID= uID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_ZvohwGxYEeewVL2cVuxgwA" name="Report" method="_ZyFY0GxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_ZvpI0mxYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_ZvpI02xYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_ZvohwWxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvohwmxYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zvohw2xYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvohxGxYEeewVL2cVuxgwA" name="type2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvpI0GxYEeewVL2cVuxgwA" name="status2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvpI0WxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZvpI1GxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZxuzgGxYEeewVL2cVuxgwA" name="Report" method="_ZyFY2GxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_Zxval2xYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_ZxvamGxYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_ZxuzgWxYEeewVL2cVuxgwA" name="rID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxvakGxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxvakWxYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxvakmxYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zxvak2xYEeewVL2cVuxgwA" name="type2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxvalGxYEeewVL2cVuxgwA" name="datum2" type="_ZxhYIGxYEeewVL2cVuxgwA"/>
+                <ownedParameter xmi:id="_ZxvalWxYEeewVL2cVuxgwA" name="status2">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxvalmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxwBoGxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zvv2gGxYEeewVL2cVuxgwA" name="ReportService">
+              <ownedAttribute xmi:id="_Zx4kgGxYEeewVL2cVuxgwA" name="repDAO" visibility="package" type="_ZxnewGxYEeewVL2cVuxgwA" association="_ZyOiwWxYEeewVL2cVuxgwA">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zx5LkGxYEeewVL2cVuxgwA" value="new ReportDAO()"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyF_4GxYEeewVL2cVuxgwA" name="findById" specification="_ZvxEoGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyF_4WxYEeewVL2cVuxgwA" name="reportID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyF_4mxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>return repDAO.findById(reportID);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyGm8GxYEeewVL2cVuxgwA" name="getAllBugreports" specification="_ZvxrsGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyGm8WxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyGm8mxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return repDAO.getAllBugreports();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyGm82xYEeewVL2cVuxgwA" name="getAllFeedback" specification="_ZvySwmxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyGm9GxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyGm9WxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return repDAO.getAllFeedback();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyGm9mxYEeewVL2cVuxgwA" name="findReport" specification="_Zvzg4GxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyGm92xYEeewVL2cVuxgwA" name="search">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyGm-GxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZyGm-WxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>List&lt;Report> all = new ArrayList&lt;Report>();&#xD;
+		List&lt;Report> matches = new ArrayList&lt;Report>();&#xD;
+		for (Report item : all) {&#xD;
+			if (item.getTitle().toLowerCase().contains(search)) {&#xD;
+				matches.add(item);&#xD;
+			}&#xD;
+		}&#xD;
+		return matches;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyHOAGxYEeewVL2cVuxgwA" name="saveFeedback" specification="_Zv0H8GxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyHOAWxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOAmxYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOA2xYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOBGxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Report report = new Report(titel, 0, tekst, 2, 0, uID);&#xD;
+		return repDAO.create(report);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyHOBWxYEeewVL2cVuxgwA" name="saveBugReport" specification="_Zv1WEGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyHOBmxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOB2xYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOCGxYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOCWxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHOCmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Report report = new Report(titel, prioriteit, tekst, 1, 0, uID);&#xD;
+		return repDAO.create(report);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyHOC2xYEeewVL2cVuxgwA" name="changeStatus" specification="_Zv19IWxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyHODGxYEeewVL2cVuxgwA" name="reportID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHODWxYEeewVL2cVuxgwA" name="newStatus">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyHODmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return repDAO.changeStatus(reportID, newStatus);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_ZvxEoGxYEeewVL2cVuxgwA" name="findById" method="_ZyF_4GxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZvxEoWxYEeewVL2cVuxgwA" name="reportID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxoF0WxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZvxrsGxYEeewVL2cVuxgwA" name="getAllBugreports" method="_ZyGm8GxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZvySwGxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZvySwWxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZvySwmxYEeewVL2cVuxgwA" name="getAllFeedback" method="_ZyGm82xYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zvy50GxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zvy50WxYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zvzg4GxYEeewVL2cVuxgwA" name="findReport" method="_ZyGm9mxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zvzg4WxYEeewVL2cVuxgwA" name="search">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zvzg4mxYEeewVL2cVuxgwA" type="_ZvmFgGxYEeewVL2cVuxgwA" isOrdered="true" direction="return">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zvzg42xYEeewVL2cVuxgwA" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zv0H8GxYEeewVL2cVuxgwA" name="saveFeedback" method="_ZyHOAGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zv0vAGxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv0vAWxYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv0vAmxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv0vA2xYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zv1WEGxYEeewVL2cVuxgwA" name="saveBugReport" method="_ZyHOBWxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zv1WEWxYEeewVL2cVuxgwA" name="titel">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv1WEmxYEeewVL2cVuxgwA" name="prioriteit">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv1WE2xYEeewVL2cVuxgwA" name="tekst">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv1WFGxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv19IGxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zv19IWxYEeewVL2cVuxgwA" name="changeStatus" method="_ZyHOC2xYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zv2kMGxYEeewVL2cVuxgwA" name="reportID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv2kMWxYEeewVL2cVuxgwA" name="newStatus">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv2kMmxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zv5AcGxYEeewVL2cVuxgwA" name="User">
+              <ownedAttribute xmi:id="_Zx5yoGxYEeewVL2cVuxgwA" name="userID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx5yoWxYEeewVL2cVuxgwA" name="password">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx6ZsGxYEeewVL2cVuxgwA" name="username">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_Zx6ZsWxYEeewVL2cVuxgwA" name="urole">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyH1EGxYEeewVL2cVuxgwA" name="User" specification="_Zv6OkGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyH1EWxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1EmxYEeewVL2cVuxgwA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1E2xYEeewVL2cVuxgwA" name="pass">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1FGxYEeewVL2cVuxgwA" name="role">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1FWxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>userID = uID;&#xD;
+		password = name;&#xD;
+		username = pass;&#xD;
+		urole = role;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyH1FmxYEeewVL2cVuxgwA" name="User" specification="_Zv7csGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyH1F2xYEeewVL2cVuxgwA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1GGxYEeewVL2cVuxgwA" name="pass">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1GWxYEeewVL2cVuxgwA" name="role">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyH1GmxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>password = name;&#xD;
+		username = pass;&#xD;
+		urole = role;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_Zv6OkGxYEeewVL2cVuxgwA" name="User" method="_ZyH1EGxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_Zv61omxYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_Zv61o2xYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_Zv6OkWxYEeewVL2cVuxgwA" name="uID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv6OkmxYEeewVL2cVuxgwA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv61oGxYEeewVL2cVuxgwA" name="pass">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv61oWxYEeewVL2cVuxgwA" name="role">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv61pGxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Zv7csGxYEeewVL2cVuxgwA" name="User" method="_ZyH1FmxYEeewVL2cVuxgwA">
+                <eAnnotations xmi:id="_Zv8Dw2xYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_Zv8DxGxYEeewVL2cVuxgwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_Zv8DwGxYEeewVL2cVuxgwA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv8DwWxYEeewVL2cVuxgwA" name="pass">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv8DwmxYEeewVL2cVuxgwA" name="role">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_Zv8DxWxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zv-gAGxYEeewVL2cVuxgwA" name="UserService">
+              <ownedAttribute xmi:id="_Zx7AwGxYEeewVL2cVuxgwA" name="userDAO" visibility="package" type="_Zxp7AGxYEeewVL2cVuxgwA" association="_ZyPJ0WxYEeewVL2cVuxgwA">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_Zx7AwWxYEeewVL2cVuxgwA" value="new UserDAO()"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyIcIGxYEeewVL2cVuxgwA" name="banUser" specification="_Zv_uIGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyIcIWxYEeewVL2cVuxgwA" name="UserID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyIcImxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return userDAO.banUser(UserID);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_ZyIcI2xYEeewVL2cVuxgwA" name="findById" specification="_ZwA8QGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZyIcJGxYEeewVL2cVuxgwA" name="userID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZyIcJWxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+                <language>java</language>
+                <body>return userDAO.findById(userID);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_Zv_uIGxYEeewVL2cVuxgwA" name="banUser" method="_ZyIcIGxYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_Zv_uIWxYEeewVL2cVuxgwA" name="UserID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZwAVMGxYEeewVL2cVuxgwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_ZwA8QGxYEeewVL2cVuxgwA" name="findById" method="_ZyIcI2xYEeewVL2cVuxgwA">
+                <ownedParameter xmi:id="_ZwA8QWxYEeewVL2cVuxgwA" name="userID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_ZxrJIGxYEeewVL2cVuxgwA" type="_Zv5AcGxYEeewVL2cVuxgwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_ZyKRUGxYEeewVL2cVuxgwA" name="" memberEnd="_Zx39cGxYEeewVL2cVuxgwA _ZyKRUWxYEeewVL2cVuxgwA">
+              <ownedEnd xmi:id="_ZyKRUWxYEeewVL2cVuxgwA" name="" type="_ZvmFgGxYEeewVL2cVuxgwA" association="_ZyKRUGxYEeewVL2cVuxgwA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_ZyNUoGxYEeewVL2cVuxgwA" name="" memberEnd="_ZyNUoWxYEeewVL2cVuxgwA _Zx1hMGxYEeewVL2cVuxgwA">
+              <ownedEnd xmi:id="_ZyNUoWxYEeewVL2cVuxgwA" name="" type="_Zvf-4GxYEeewVL2cVuxgwA" association="_ZyNUoGxYEeewVL2cVuxgwA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_ZyOiwWxYEeewVL2cVuxgwA" name="" memberEnd="_ZyOiwmxYEeewVL2cVuxgwA _Zx4kgGxYEeewVL2cVuxgwA">
+              <ownedEnd xmi:id="_ZyOiwmxYEeewVL2cVuxgwA" name="" type="_Zvv2gGxYEeewVL2cVuxgwA" association="_ZyOiwWxYEeewVL2cVuxgwA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_ZyPJ0WxYEeewVL2cVuxgwA" name="" memberEnd="_ZyPJ0mxYEeewVL2cVuxgwA _Zx7AwGxYEeewVL2cVuxgwA">
+              <ownedEnd xmi:id="_ZyPJ0mxYEeewVL2cVuxgwA" name="" type="_Zv-gAGxYEeewVL2cVuxgwA" association="_ZyPJ0WxYEeewVL2cVuxgwA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_ZuvJ4WxYEeewVL2cVuxgwA" name="persistence">
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zxe74GxYEeewVL2cVuxgwA" name="ReactieDAO"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZxnewGxYEeewVL2cVuxgwA" name="ReportDAO"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Zxp7AGxYEeewVL2cVuxgwA" name="UserDAO"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Zuui0GxYEeewVL2cVuxgwA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZuvJ4GxYEeewVL2cVuxgwA" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_ZxcfoGxYEeewVL2cVuxgwA" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ZxmQoGxYEeewVL2cVuxgwA" name="ArrayList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Zu0pcGxYEeewVL2cVuxgwA" name="sql">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_ZxhYIGxYEeewVL2cVuxgwA" name="Timestamp"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_Zch_kGxYEeewVL2cVuxgwA">
+      <eAnnotations xmi:id="_Zckb0GxYEeewVL2cVuxgwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_ZcoGMGxYEeewVL2cVuxgwA" base_Package="_ZMWOgGxYEeewVL2cVuxgwA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_ZxdtwGxYEeewVL2cVuxgwA" base_Element="_ZxcfoGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZxgKAGxYEeewVL2cVuxgwA" base_Element="_Zxe74GxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZximQGxYEeewVL2cVuxgwA" base_Element="_ZxhYIGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_Zxm3sGxYEeewVL2cVuxgwA" base_Element="_ZxmQoGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZxoF0GxYEeewVL2cVuxgwA" base_Element="_ZxnewGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZxqiEGxYEeewVL2cVuxgwA" base_Element="_Zxp7AGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zx2IQGxYEeewVL2cVuxgwA" base_Element="_Zx1hMGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zx5LkWxYEeewVL2cVuxgwA" base_Element="_Zx4kgGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Zx7n0GxYEeewVL2cVuxgwA" base_Element="_Zx7AwGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZyOiwGxYEeewVL2cVuxgwA" base_Element="_ZyNUoGxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZyPJ0GxYEeewVL2cVuxgwA" base_Element="_ZyOiwWxYEeewVL2cVuxgwA"/>
+  <UMLLabProfile:Reference xmi:id="_ZyPw4GxYEeewVL2cVuxgwA" base_Element="_ZyPJ0WxYEeewVL2cVuxgwA"/>
+</xmi:XMI>
